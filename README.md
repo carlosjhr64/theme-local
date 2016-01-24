@@ -18,8 +18,27 @@ $ omf install local
 
 ## Features
 
-* Lorem ipsum dolor sit amet.
-* Consectetur adipisicing elit.
+* Greeting from .greeting file in the working directory.
+
+No greeting is given if .greeting is absent.
+
+* Prompt from .prompt file in the working directory.
+
+If .prompt is absent, defaults to "basename> ".
+
+* Blue prompt on success, red on error.
+
+* Short timestamp for right prompt.
+
+* Right prompt is green when git is clean, red when dirty.
+
+The right prompt is normal color when .git is absent.
+
+* Title from .title file in the working directory.
+
+Title defaults to basename when .title is absent.
+The version number is appended to the title if data/VERSION is found.
+Also appends the ruby version if .ruby-version file is found in the working directory.
 
 ## Screenshot
 
