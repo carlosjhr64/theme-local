@@ -11,10 +11,13 @@
 
 ## Install
 
+If it gets registered, one should be able to run:
 
 ```fish
 $ omf install local
 ```
+
+Otherwise, cloning this git to ~/.config/omf/themes/local should also work.
 
 ## Features
 
