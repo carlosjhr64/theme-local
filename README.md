@@ -35,6 +35,8 @@ If .prompt is absent, defaults to "basename> ".
 
 * Right prompt is green when git is clean, red when dirty.
 
+Additionally, it's magenta when there are untracked files, and yellow when git is out of sync.
+And uses the default themes' symbols to mark the git status.
 The right prompt is normal color when .git is absent.
 
 * Title from .title file in the working directory.
