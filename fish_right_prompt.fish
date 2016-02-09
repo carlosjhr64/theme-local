@@ -4,7 +4,7 @@ function _git_color
   set -l git (command git status -b --porcelain ^/dev/null | egrep -o '^((##.*)|(..))')
 
   if test -n "$git"
-    if test $git[1] = '## master'
+    if test $git[1] = '## master...origin/master'
       set head '◦'
     else
       set -l b (echo $git[1] | egrep -o '((ahead)|(behind))')
