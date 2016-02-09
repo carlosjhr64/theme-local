@@ -1,4 +1,4 @@
-#### local
+# theme-local
 
 [A Fish / Fisherman theme](http://fisherman.sh)
 <br/>
