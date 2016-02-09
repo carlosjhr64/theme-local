@@ -1,23 +1,37 @@
 function _git_color
-  set -l ahead    "↑"
-  set -l behind   "↓"
-  set -l diverged "⥄ "
-  set -l dirty    "⨯"
-  set -l none     "◦"
-  set -l head (git_ahead $ahead $behind $diverged $none)
+  set -l head '?'
+  set -l color 'red'
+  set -l git (command git status -b --porcelain ^/dev/null | egrep -o '^((##.*)|(..))')
 
-  set -l color "green"
-  set -l git (command git status --porcelain ^/dev/null | egrep -o '^(..)')
   if test -n "$git"
-    if test $git[1] = "??"
-      set color "magenta"
+    if test $git[1] = '## master'
+      set head '◦'
     else
-      set color "red"
-      set head $dirty
+      set -l b (echo $git[1] | egrep -o '((ahead)|(behind))')
+      if test "$b" = 'ahead'
+        set head '↑'
+      else
+        if test "$b" = 'behind'
+          set head '↓'
+        else
+          set head '⥄'
+        end
+      end
     end
-  else
-    if test "$head" != "$none"
-      set color "yellow"
+
+    set -l n (count $git)
+    if test $n -gt 1
+      if test $git[2] = '??'
+        set color 'magenta'
+      else
+        set head '⨯'
+      end
+    else
+      if test "$head" = '◦'
+        set color 'green'
+      else
+        set color 'yellow'
+      end
     end
   end
 
