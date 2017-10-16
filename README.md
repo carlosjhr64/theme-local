@@ -7,7 +7,7 @@
 
 
 ```fish
-fisher install https://github.com/carlosjhr64/theme-local
+fisher install carlosjhr64/theme-local
 ```
 
 ## Features
