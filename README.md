@@ -12,6 +12,8 @@ fisher install carlosjhr64/theme-local
 
 ## Features
 
+* Sources .config.fish file if found in the working directory at greeting time.
+
 * Greeting from .greeting file in the working directory.
 
 No greeting is given if .greeting is absent.
