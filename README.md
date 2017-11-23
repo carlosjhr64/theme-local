@@ -1,6 +1,6 @@
 # theme-local
 
-[A Fish / Fisherman theme](http://fisherman.sh)
+[A Fish / Fisherman theme](https://fisherman.github.io/)
 <br/>
 
 ## Install
