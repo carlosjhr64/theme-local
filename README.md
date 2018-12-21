@@ -1,14 +1,11 @@
 # theme-local
 
 [A Fish / Fisherman theme](https://fisherman.github.io/)
-<br/>
 
 ## Install
 
 
-```fish
-fisher install carlosjhr64/theme-local
-```
+    fisher add carlosjhr64/theme-local
 
 ## Features
 
