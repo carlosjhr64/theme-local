@@ -1,11 +1,10 @@
 # theme-local
 
-A theme for [Fisherman](https://github.com/jorgebucaran/fisher) version v3.
+A theme for [Fisherman](https://github.com/jorgebucaran/fisher) version v4.
 
 ## Install
 
-
-    fisher add carlosjhr64/theme-local
+    fisher install carlosjhr64/theme-local
 
 ## Features
 
