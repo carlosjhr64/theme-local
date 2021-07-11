@@ -1,7 +1,7 @@
 function theme-local_git_color
   set -l head '?'
   set -l color 'red'
-  set -l git (command git status -b --porcelain ^/dev/null | egrep -o '^((##.*)|(..))')
+  set -l git (command git status -b --porcelain 2> /dev/null | egrep -o '^((##.*)|(..))')
 
   if test -n "$git"
     if test $git[1] = '## master...origin/master'
