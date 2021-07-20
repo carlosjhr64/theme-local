@@ -5,6 +5,8 @@ function theme-local_git_color
 
   if test -n "$git"
     if test $git[1] = '## master...origin/master'
+      or test $git[1] = '## main...origin/main'
+      set head '◦'
       set head '◦'
     else
       set -l b (echo $git[1] | egrep -o '((ahead)|(behind))')
