@@ -1,6 +1,6 @@
 # theme-local
 
-A theme for [Fisherman](https://github.com/jorgebucaran/fisher) version v4.
+A theme for [Fisherman](https://github.com/jorgebucaran/fisher) version 4.
 
 ## Install
 
@@ -20,7 +20,7 @@ If .prompt is absent, defaults to "basename> ".
 
 * Blue prompt on success, red on error.
 
-* Short timestamp for right prompt.
+* Short timestamp for right prompt, with hostname appended if a ssh client.
 
 * Right prompt is green when git is clean, red when dirty.
 
@@ -31,8 +31,8 @@ The right prompt is normal color when .git is absent.
 * Title from .title file in the working directory.
 
 Title defaults to basename when .title is absent.
-The version number is appended to the title if data/VERSION is found.
-Also appends the ruby version if .ruby-version file is found in the working directory.
+The contents of .version file (if it exists) is appended to the title.
+Also appends the contents of .ruby-version file if it exists.
 
 ## Screenshot
 

@@ -48,5 +48,9 @@ function fish_right_prompt
     set color (theme-local_git_color)
   end
   set -l d (date '+%T')
-  echo -n -s $color $d $normal
+  set -l h ''
+  if test -n "$SSH_CLIENT"
+    set h " $HOSTNAME"
+  end
+  echo -n -s $color $d $h $normal
 end

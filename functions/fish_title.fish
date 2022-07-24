@@ -5,8 +5,8 @@ function fish_title
   else
     set title (basename (pwd))
   end
-  if test -e data/VERSION
-    set title $title ' ' (cat data/VERSION)
+  if test -e .version
+    set title $title ' ' (cat .version)
   end
   if test -e .ruby-version
     set title $title ' / ' (cat .ruby-version)
