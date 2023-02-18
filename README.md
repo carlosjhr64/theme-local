@@ -36,14 +36,8 @@ Also appends the contents of .ruby-version file if it exists.
 
 ## Screenshot
 
-<p align="center">
-<img src="local_theme.png">
-</p>
+![PNG](local_theme.png)
 
 # License
 
-[MIT][mit] © [CarlosJHR64][author]
-
-
-[mit]:            http://opensource.org/licenses/MIT
-[author]:         http://github.com/carlosjhr64
+[MIT](http://opensource.org/licenses/MIT) © [CarlosJHR64](http://github.com/carlosjhr64)
