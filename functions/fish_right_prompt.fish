@@ -50,7 +50,7 @@ function fish_right_prompt
   set -l d (date '+%T')
   set -l h ''
   if test -n "$SSH_CLIENT"
-    set h " $HOSTNAME"
+    set h (hostname)
   end
   echo -n -s $color $d $h $normal
 end
